@@ -8,6 +8,7 @@ import Split from 'grommet/components/Split';
 import NavSidebar from './NavSidebar';
 import { navResponsive } from '../actions/nav';
 
+import AuthenticatedRoute from './AuthenticatedRoute';
 import Login from '../screens/Login';
 import Dashboard from '../screens/Dashboard';
 import Tasks from '../screens/Tasks';
@@ -45,11 +46,11 @@ class Main extends Component {
           >
             {nav}
             <Switch>
-              <Route exact={true} path='/' component={Dashboard} />
-              <Route path='/dashboard' component={Dashboard} />
+              <AuthenticatedRoute exact={true} path='/' component={Dashboard} />
+              <AuthenticatedRoute path='/dashboard' component={Dashboard} />
               <Route path='/login' component={Login} />
-              <Route path='/tasks/:id' component={Task} />
-              <Route path='/tasks' component={Tasks} />
+              <AuthenticatedRoute path='/tasks/:id' component={Task} />
+              <AuthenticatedRoute path='/tasks' component={Tasks} />
               <Route path='/*' component={NotFound} />
             </Switch>
           </Split>
