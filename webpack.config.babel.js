@@ -53,7 +53,7 @@ if (env === 'production') {
   plugins = plugins.concat([
     new webpack.HotModuleReplacementPlugin()
   ]);
-  devConfig.devtool = 'cheap-module-source-map';
+  devConfig.devtool = 'source-map';
   devConfig.entry = [
     require.resolve('react-dev-utils/webpackHotDevClient'),
     './src/js/index.js'
