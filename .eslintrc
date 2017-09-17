@@ -14,7 +14,8 @@
     "window": true,
     "fetch": true,
     "WebSocket": true,
-    "alert": true
+    "alert": true,
+    "afterEach": true
   },
   "rules": {
     "react/jsx-filename-extension": 0,
