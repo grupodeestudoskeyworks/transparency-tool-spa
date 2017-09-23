@@ -17,7 +17,7 @@ export function parseJSON(response) {
 }
 
 export function updateHeaders(newHeaders) {
-  _headers = { ..._headers, newHeaders };
+  _headers = { ..._headers, ...newHeaders };
   Object.keys(_headers).forEach((key) => {
     if (undefined === _headers[key]) {
       delete _headers[key];
