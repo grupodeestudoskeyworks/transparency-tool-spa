@@ -11,8 +11,6 @@ export function initialize() {
       dispatch({
         type: SESSION_LOAD, payload: { email, name, token }
       });
-    } else {
-      window.location = '/login';
     }
   };
 }
@@ -21,7 +19,7 @@ export function login(email, password, done) {
   return dispatch => (
     postSession(email, password)
       .then((payload) => {
-        updateHeaders({ Auth: payload.token });
+        updateHeaders({ Authorization: `Bearer ${payload.token}` });
         dispatch({ type: SESSION_LOGIN, payload });
         try {
           localStorage.email = payload.email;

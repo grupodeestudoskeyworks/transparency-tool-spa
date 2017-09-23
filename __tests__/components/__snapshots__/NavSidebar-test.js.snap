@@ -1,0 +1,182 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NavSidebar renders 1`] = `
+<div
+  className="grommetux-box grommetux-box--direction-column grommetux-box--responsive grommetux-box--pad-none grommetux-background-color-index-neutral-1-a grommetux-background-color-index--pending grommetux-sidebar grommetux-sidebar--fixed grommetux-sidebar--full"
+  id={undefined}
+  onClick={undefined}
+  role={undefined}
+  style={Object {}}
+  tabIndex={undefined}
+>
+  <div
+    className="grommetux-box grommetux-box--direction-column grommetux-box--responsive grommetux-box--pad-none grommetux-box--flex-off"
+    id={undefined}
+    onClick={undefined}
+    role={undefined}
+    style={Object {}}
+    tabIndex={undefined}
+  >
+    <header
+      className="grommetux-box grommetux-box--direction-row grommetux-box--justify-between grommetux-box--align-center grommetux-box--pad-horizontal-medium grommetux-header grommetux-header--large"
+      id={undefined}
+      onClick={undefined}
+      role={undefined}
+      style={Object {}}
+      tabIndex={undefined}
+    >
+      <div
+        aria-label="Close Menu"
+        className="grommetux-box grommetux-box--direction-row grommetux-box--align-center grommetux-box--pad-none grommetux-box--clickable grommetux-title grommetux-title--responsive grommetux-title--truncate grommetux-title--interactive"
+        id={undefined}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onMouseDown={[Function]}
+        onMouseUp={[Function]}
+        role="group"
+        style={Object {}}
+        tabIndex={0}
+      >
+        <svg
+          aria-label="Grommet"
+          className="grommetux-logo-icon"
+          height="182"
+          role="img"
+          version="1.1"
+          viewBox="0 0 182 182"
+          width="182"
+        >
+          <path
+            d="M 91,91 m 0,-82 a 82,82 0 1,1 0,164 a 82,82 0 1,1 0,-164"
+            fill="none"
+            role="presentation"
+            stroke="#865CD6"
+            strokeWidth="18"
+          />
+        </svg>
+        <span>
+          Sample App
+        </span>
+      </div>
+      <button
+        aria-label="Close Menu"
+        className="grommetux-button grommetux-button--plain"
+        disabled={false}
+        href={undefined}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onMouseDown={[Function]}
+        onMouseUp={[Function]}
+        type="button"
+      >
+        <span
+          className="grommetux-button__icon"
+        >
+          <svg
+            aria-label="close"
+            className="grommetux-control-icon grommetux-control-icon-close grommetux-control-icon--responsive"
+            height="24px"
+            role="img"
+            version="1.1"
+            viewBox="0 0 24 24"
+            width="24px"
+          >
+            <path
+              d="M3,3 L21,21 M3,21 L21,3"
+              fill="none"
+              stroke="#000"
+              strokeWidth="2"
+            />
+          </svg>
+        </span>
+      </button>
+    </header>
+  </div>
+  <nav
+    className="grommetux-box grommetux-box--direction-column grommetux-box--responsive grommetux-box--pad-none grommetux-menu grommetux-menu--column grommetux-menu--primary grommetux-menu--inline grommetux-menu--fill"
+    id={undefined}
+    onClick={undefined}
+    role={undefined}
+    style={Object {}}
+    tabIndex={undefined}
+  >
+    <a
+      aria-label={undefined}
+      className="grommetux-anchor"
+      href="/dashboard"
+      onClick={[Function]}
+    >
+      /dashboard
+    </a>
+    <a
+      aria-label={undefined}
+      className="grommetux-anchor"
+      href="/tasks"
+      onClick={[Function]}
+    >
+      /tasks
+    </a>
+    <a
+      aria-label={undefined}
+      className="grommetux-anchor"
+      href="/contributors"
+      onClick={[Function]}
+    >
+      /contributors
+    </a>
+  </nav>
+  <footer
+    className="grommetux-box grommetux-box--direction-row grommetux-box--align-center grommetux-box--pad-horizontal-medium grommetux-box--pad-vertical-small grommetux-footer"
+    id={undefined}
+    onClick={undefined}
+    role={undefined}
+    style={Object {}}
+    tabIndex={undefined}
+  >
+    <div
+      className="grommetux-box grommetux-box--direction-column grommetux-box--responsive grommetux-box--pad-none grommetux-menu grommetux-menu--column grommetux-menu--controlled grommetux-menu__control"
+      id={undefined}
+      onClick={undefined}
+      role={undefined}
+      style={Object {}}
+      tabIndex={undefined}
+    >
+      <button
+        aria-label="Open Session Menu"
+        className="grommetux-button grommetux-button--plain"
+        disabled={false}
+        href={undefined}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onMouseDown={[Function]}
+        onMouseUp={[Function]}
+        type="button"
+      >
+        <span
+          className="grommetux-button__icon"
+        >
+          <svg
+            aria-label="user"
+            className="grommetux-control-icon grommetux-control-icon-user grommetux-control-icon--responsive"
+            height="24px"
+            role="img"
+            version="1.1"
+            viewBox="0 0 24 24"
+            width="24px"
+          >
+            <path
+              d="M8,24 L8,19 M16,24 L16,19 M3,24 L3,19 C3,14.0294373 7.02943725,11 12,11 C16.9705627,11 21,14.0294373 21,19 L21,24 M12,11 C14.7614237,11 17,8.76142375 17,6 C17,3.23857625 14.7614237,1 12,1 C9.23857625,1 7,3.23857625 7,6 C7,8.76142375 9.23857625,11 12,11 Z"
+              fill="none"
+              stroke="#000"
+              strokeWidth="2"
+            />
+          </svg>
+        </span>
+      </button>
+    </div>
+  </footer>
+</div>
+`;

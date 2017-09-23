@@ -32,9 +32,10 @@ class Login extends Component {
 
   _onSubmit(fields) {
     const { dispatch } = this.props;
+    const { from } = this.props.location.state || { from: { pathname: '/' } };
     const { router } = this.context;
     dispatch(login(fields.username, fields.password, () => (
-      router.history.push('/dashboard')
+      router.history.push(from.pathname)
     )));
   }
 
@@ -85,6 +86,13 @@ class Login extends Component {
 }
 
 Login.defaultProps = {
+  location: {
+    state: {
+      from: {
+        pathname: '/'
+      }
+    }
+  },
   session: {
     error: undefined
   }
@@ -92,6 +100,13 @@ Login.defaultProps = {
 
 Login.propTypes = {
   dispatch: PropTypes.func.isRequired,
+  location: PropTypes.shape({
+    state: PropTypes.shape({
+      from: PropTypes.shape({
+        pathname: PropTypes.string
+      })
+    })
+  }),
   session: PropTypes.shape({
     error: PropTypes.string
   })

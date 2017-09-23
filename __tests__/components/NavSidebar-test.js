@@ -1,7 +1,7 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import { Provider } from 'react-redux';
-import { Router } from 'react-router';
+import { Route, Router } from 'react-router';
 
 import createMemoryHistory from 'history/createMemoryHistory';
 
@@ -10,11 +10,6 @@ import store from '../../src/js/store';
 
 const history = createMemoryHistory('/');
 
-const routes = [{
-  path: '/',
-  component: () => <NavSidebar />
-}];
-
 // needed because this:
 // https://github.com/facebook/jest/issues/1353
 jest.mock('react-dom');
@@ -22,7 +17,9 @@ jest.mock('react-dom');
 test('NavSidebar renders', () => {
   const component = renderer.create(
     <Provider store={store}>
-      <Router routes={routes} history={history} />
+      <Router history={history}>
+        <Route path='/' component={NavSidebar} />
+      </Router>
     </Provider>
   );
   const tree = component.toJSON();
