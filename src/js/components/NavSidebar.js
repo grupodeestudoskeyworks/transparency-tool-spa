@@ -49,7 +49,7 @@ class NavSidebar extends Component {
     ));
 
     return (
-      <Sidebar colorIndex='neutral-1-a' fixed={true}>
+      <Sidebar colorIndex='brand' fixed={true}>
         <Header
           size='large'
           justify='between'

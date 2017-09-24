@@ -2,7 +2,7 @@
 
 exports[`NavSidebar renders 1`] = `
 <div
-  className="grommetux-box grommetux-box--direction-column grommetux-box--responsive grommetux-box--pad-none grommetux-background-color-index-neutral-1-a grommetux-background-color-index--pending grommetux-sidebar grommetux-sidebar--fixed grommetux-sidebar--full"
+  className="grommetux-box grommetux-box--direction-column grommetux-box--responsive grommetux-box--pad-none grommetux-background-color-index-brand grommetux-background-color-index--pending grommetux-sidebar grommetux-sidebar--fixed grommetux-sidebar--full"
   id={undefined}
   onClick={undefined}
   role={undefined}

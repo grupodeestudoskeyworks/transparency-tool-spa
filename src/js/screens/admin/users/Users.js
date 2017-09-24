@@ -20,7 +20,7 @@ import { pageLoaded } from '../../utils';
 
 const users = [
   {id: 1, name: 'Augusto F. Rodrigues', username: 'afrodrigues', email: 'afrodrigues@afrodrigues.io', active: true},
-  {id: 2, name: 'Lenerson V. Nunes', username: 'lvnunes', email: 'lvnunes@lvnunes.io', active: true}
+  {id: 2, name: 'Lenilson V. Nunes', username: 'lvnunes', email: 'lvnunes@lvnunes.io', active: true}
 ];
 
 class Users extends Component {
@@ -123,7 +123,7 @@ class Users extends Component {
         <Box align='start' margin='medium'>
           <Button
             icon={<AddIcon/>}
-            label={getMessage(intl, 'Create')}
+            label={getMessage(intl, 'Register')}
             primary={true}
             href='#'/>
         </Box>
