@@ -1,6 +1,6 @@
 import { announcePageLoaded } from 'grommet/utils/Announcer';
 
-const DEFAULT_TITLE = 'Sample App';
+const DEFAULT_TITLE = 'Ferramenta da Transparência';
 
 export function pageLoaded(title) {
   if (document) {
