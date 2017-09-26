@@ -125,7 +125,7 @@ class Users extends Component {
             icon={<AddIcon/>}
             label={getMessage(intl, 'Register')}
             primary={true}
-            href='#'/>
+            path='/user'/>
         </Box>
         <Box margin='medium'>
           <Search fill={true}

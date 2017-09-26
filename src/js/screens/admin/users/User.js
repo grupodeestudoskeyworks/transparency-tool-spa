@@ -7,7 +7,6 @@ import Button from 'grommet/components/Button';
 import CheckBox from 'grommet/components/CheckBox';
 import CheckmarkIcon from 'grommet/components/icons/base/Checkmark';
 import CloseIcon from 'grommet/components/icons/base/Close';
-import Columns from 'grommet/components/Columns';
 import Form from 'grommet/components/Form';
 import FormField from 'grommet/components/FormField';
 import FormFields from 'grommet/components/FormFields';
@@ -55,55 +54,38 @@ class User extends Component {
               </Box>
             </Header>
             <FormFields>
-              <Columns justify='center' masonry={true} maxCount={2} size='medium'>
-                <Box align='center'
-                  margin='small'>
-                  <FormField label={getMessage(intl, 'Name')}>
-                    <TextInput/>
-                  </FormField>
-                </Box>
-                <Box align='center'
-                  margin='small'>
-                  <FormField label={getMessage(intl, 'Username')}>
-                    <TextInput/>
-                  </FormField>
-                </Box>
-                <Box align='center'
-                  margin='small'>
-                  <FormField label={getMessage(intl, 'Email')}>
-                    <TextInput/>
-                  </FormField>
-                </Box>
-                <Box align='center'
-                  pad='medium'
-                  margin='small'>
-                  <CheckBox label={getMessage(intl, 'Active')} reverse={true} toggle={true}/>
-                </Box>
-              </Columns>
+              <Box align='center' direction='row' pad={{between: 'small', vertical: 'small'}}>
+                <FormField label={getMessage(intl, 'Name')}>
+                  <TextInput/>
+                </FormField>
+                <FormField label={getMessage(intl, 'Username')}>
+                  <TextInput/>
+                </FormField>
+              </Box>
+              <Box align='center' direction='row' pad={{between: 'small', vertical: 'small'}}>
+                <FormField label={getMessage(intl, 'Email')}>
+                  <TextInput/>
+                </FormField>
+                <FormField label={getMessage(intl, 'Active')}>
+                  <CheckBox/>
+                </FormField>
+              </Box>
             </FormFields>
-            <Box direction='row'
-              pad='medium'
-              margin='small'>
-              <Box pad='small'>
-                <Button type='submit'
-                  primary={true}
-                  icon={<CheckmarkIcon/>}
-                  label={getMessage(intl, 'Save')}/>
-              </Box>
-              <Box pad='small'>
-                <Button type='button'
-                  critical={true}
-                  href='#'
-                  icon={<CloseIcon/>}
-                  label={getMessage(intl, 'Delete')}/>
-              </Box>
-              <Box pad='small'>
-                <Button type='button'
-                  secondary={true}
-                  href='#'
-                  icon={<LinkPreviousIcon/>}
-                  label={getMessage(intl, 'Back')}/>
-              </Box>
+            <Box direction='row' justify='end' pad={{between: 'small', vertical: 'small'}}>
+              <Button type='submit'
+                primary={true}
+                icon={<CheckmarkIcon/>}
+                label={getMessage(intl, 'Save')}/>
+              <Button type='button'
+                critical={true}
+                href='#'
+                icon={<CloseIcon/>}
+                label={getMessage(intl, 'Delete')}/>
+              <Button type='button'
+                secondary={true}
+                path='/users'
+                icon={<LinkPreviousIcon/>}
+                label={getMessage(intl, 'Back')}/>
             </Box>
           </Form>
         </Box>
