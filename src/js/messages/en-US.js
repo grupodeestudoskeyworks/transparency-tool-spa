@@ -1,9 +1,7 @@
 module.exports = {
-  '/contributors': 'Contributors',
-  '/dashboard': 'Dashboard',
-  '/tasks': 'Tasks',
   Active: 'Active',
   Back: 'Back',
+  Dashboard: 'Dashboard',
   Delete: 'Delete',
   Email: 'Email',
   Name: 'Name',

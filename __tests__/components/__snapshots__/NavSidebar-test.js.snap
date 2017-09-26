@@ -105,10 +105,18 @@ exports[`NavSidebar renders 1`] = `
     <a
       aria-label={undefined}
       className="grommetux-anchor"
+      href="/users"
+      onClick={[Function]}
+    >
+      Users
+    </a>
+    <a
+      aria-label={undefined}
+      className="grommetux-anchor"
       href="/dashboard"
       onClick={[Function]}
     >
-      /dashboard
+      Dashboard
     </a>
     <a
       aria-label={undefined}
@@ -116,15 +124,7 @@ exports[`NavSidebar renders 1`] = `
       href="/tasks"
       onClick={[Function]}
     >
-      /tasks
-    </a>
-    <a
-      aria-label={undefined}
-      className="grommetux-anchor"
-      href="/contributors"
-      onClick={[Function]}
-    >
-      /contributors
+      Tasks
     </a>
   </nav>
   <footer

@@ -15,6 +15,8 @@ import Anchor from 'grommet/components/Anchor';
 import SessionMenu from './SessionMenu';
 import {navActivate, navLoadItems} from '../actions/nav';
 
+import getRoutesByRole from '../routes/menu/index';
+
 class NavSidebar extends Component {
   constructor() {
     super();
@@ -27,9 +29,9 @@ class NavSidebar extends Component {
     const {intl} = this.context;
     this
       .props
-      .dispatch(navLoadItems(['/dashboard', '/tasks', '/contributors'].map(path => ({
-        path,
-        label: getMessage(intl, path)
+      .dispatch(navLoadItems(getRoutesByRole().map(route => ({
+        path: route.path,
+        label: getMessage(intl, route.label)
       }))));
   }
 

@@ -1,9 +1,7 @@
 module.exports = {
-  '/contributors': 'Colaboradores',
-  '/dashboard': 'Painel de Controle',
-  '/tasks': 'Tarefas',
   Active: 'Ativo(a)',
   Back: 'Voltar',
+  Dashboard: 'Painel de Controle',
   Delete: 'Excluir',
   Email: 'E-mail',
   Name: 'Nome',
