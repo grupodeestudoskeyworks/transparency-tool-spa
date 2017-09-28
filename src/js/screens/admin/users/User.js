@@ -54,24 +54,26 @@ class User extends Component {
               </Box>
             </Header>
             <FormFields>
-              <Box align='center' direction='row' pad={{between: 'small', vertical: 'small'}}>
-                <FormField label={getMessage(intl, 'Name')}>
-                  <TextInput/>
-                </FormField>
-                <FormField label={getMessage(intl, 'Username')}>
-                  <TextInput/>
-                </FormField>
-              </Box>
-              <Box align='center' direction='row' pad={{between: 'small', vertical: 'small'}}>
-                <FormField label={getMessage(intl, 'Email')}>
-                  <TextInput/>
-                </FormField>
-                <FormField label={getMessage(intl, 'Active')}>
-                  <CheckBox/>
-                </FormField>
+              <Box pad={{between: 'small'}}>
+                <Box align='center' direction='row' pad={{between: 'small'}}>
+                  <FormField label={getMessage(intl, 'Name')}>
+                    <TextInput/>
+                  </FormField>
+                  <FormField label={getMessage(intl, 'Username')}>
+                    <TextInput/>
+                  </FormField>
+                </Box>
+                <Box align='center' direction='row' pad={{between: 'small'}}>
+                  <FormField label={getMessage(intl, 'Email')}>
+                    <TextInput/>
+                  </FormField>
+                  <FormField label={getMessage(intl, 'Active')}>
+                    <CheckBox/>
+                  </FormField>
+                </Box>
               </Box>
             </FormFields>
-            <Box direction='row' justify='end' pad={{between: 'small', vertical: 'small'}}>
+            <Box direction='row' justify='end' margin={{vertical: 'small'}} pad={{between: 'small'}}>
               <Button type='submit'
                 primary={true}
                 icon={<CheckmarkIcon/>}
